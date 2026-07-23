@@ -22,6 +22,11 @@ background: linear-gradient(60deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233
     cursor: pointer;
     margin: 20px;
 }
+
+.img{
+    height: 100px;
+    width: 100px;
+}
 /* el elemento al que se accede desde css para provocar que pueda girar */
 .card.girar {
     transform: rotateY(180deg);
