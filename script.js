@@ -9,17 +9,13 @@ btnVocales.addEventListener('click', () => {
     })
 })
 //creamos la constante y entramos al div por id
-const card = document.getElementById("card");
+const cards = document.querySelectorAll(".card");
 
-//accedemos a card y decimos que cuando se de clic entra a card, luego a la propiedad classlist y por ultimo activa toggle que provoca el giro al entrar al css
-card.addEventListener("click", () => {
-    card.classList.toggle("girar");
-})
-
-console.log("hola mundo")
-
-
-
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("girar");
+    });
+});
 const boton = document.getElementById("botonTodas");
 
 boton.addEventListener("click", function () {
