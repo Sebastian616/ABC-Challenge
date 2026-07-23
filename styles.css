@@ -1,4 +1,6 @@
 
+
+
 Body{
  background: #EEAECA;
 background: linear-gradient(60deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
@@ -63,7 +65,7 @@ background: linear-gradient(60deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233
 
 /*Estilo navbar*/
 .navbar{
-    width:90%;
+    width:95%;
     display:flex;
     justify-content:space-between;
     align-items:center;
