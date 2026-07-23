@@ -3,6 +3,11 @@ Body{
  background: #EEAECA;
 background: linear-gradient(60deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 }
+
+Body{
+ background: #EEAECA;
+background: linear-gradient(60deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
 /* en la card se almacena toda la informacion de donde se almacena la card incluyendo la animacion, sin transition simplemente cambia */
 /* el transform style preserve 3d permite que al girar se vea la card trasera, sin ella se ve la misma card delantera al reves*/
 .card {
