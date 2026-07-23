@@ -1,3 +1,5 @@
+let letrasVistas = 0;
+
 //Botones filtros
 const btnVocales = document.getElementById('btn-vocales');
 btnVocales.addEventListener('click', () => {
@@ -25,15 +27,11 @@ cards.forEach(card => {
         card.classList.toggle("girar");
     });
 });
-const boton = document.getElementById("botonTodas");
-
-boton.addEventListener("click", function () {
-    alert("¡Hola! Presionaste el botón.");
-});
-let letrasVistas = 0;
 
 function voltear(card) {
-  card.classList.toggle('volteada');
+    console.log("Entró a voltear");
+    console.log("Antes:", letrasVistas);
+    card.classList.toggle('volteada');
 
   // Solo sumamos si la card se est volteando por primera vez
   if (card.classList.contains('volteada') && !card.dataset.vista) {
