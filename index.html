@@ -9,15 +9,6 @@
 </head>
 <header>
     <nav class="navbar">
-        <div class="logo">
-            <a>ABC Challenge</a>
-        </div>
-
-        <ul class="menu">
-            <li>Inicio</a></li>
-            <li>Quienes somos</a></li>
-            <li>Contacto</a></li>
-        </ul>
         <h2>ABCchallenge</h2>
         <div class="contador">
             Letras descubiertas: <span id="contador-letras">0</span>
@@ -25,13 +16,14 @@
 
     </nav>
 </header>
-<div>
-    <button id="btn-vocales">Vocales</button>
+<div id="botones">
+    <button class="boton"  id="btn-vocales">Vocales</button>
+    <button class="boton" ' id="btn-todas">Todas</button>
 </div>
 
 <body>
     <div class="contenedor-cards">
-        <div class="card" onclick='voltear(this)'>
+        <div class="card" data-tipo='vocal' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>A</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -41,7 +33,7 @@
                 <img src="./IMG/pngwing.com (2).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>B</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -52,7 +44,7 @@
             </div>
         </div>
 
-        <div class="card" onclick='voltear(this)'>
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>C</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -63,7 +55,7 @@
             </div>
         </div>
 
-        <div class="card" onclick='voltear(this)'>
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>D</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -73,7 +65,8 @@
                 <img src="./IMG/pngwing.com (12).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='vocal' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>E</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -83,7 +76,8 @@
                 <img src="./IMG/pngwing.com (13).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>F</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -93,7 +87,8 @@
                 <img src="./IMG/pngwing.com (14).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>G</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -103,7 +98,8 @@
                 <img src="./IMG/pngwing.com (15).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>H</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -113,7 +109,8 @@
                 <img src="./IMG/pngwing.com (16).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='vocal' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>I</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -123,7 +120,8 @@
                 <img src="./IMG/pngwing.com (17).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante'onclick='voltear(this)'>
             <div class="delantera">
                 <h2>J</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -133,7 +131,8 @@
                 <img src="./IMG/pngwing.com (18).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>K</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -143,7 +142,8 @@
                 <img src="./IMG/pngwing.com (19).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>L</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -153,7 +153,8 @@
                 <img src="./IMG/pngwing.com (20).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>M</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -163,7 +164,8 @@
                 <img src="./IMG/pngwing.com (21).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>N</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -173,7 +175,8 @@
                 <img src="./IMG/pngwing.com (27).png">
             </div>
         </div>
-        <div class="card" id="card" onclick="voltear(this)">
+
+        <div class="card" data-tipo='vocal' id="card" onclick="voltear(this)">
             <div class="delantera">
                 <h2>O</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -183,7 +186,8 @@
                 <img src="./IMG/pngwing.com (3).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>P</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -193,7 +197,8 @@
                 <img src="./IMG/pngwing.com (22).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>Q</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -203,7 +208,8 @@
                 <img src="./IMG/pngwing.com (23).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>R</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -213,7 +219,8 @@
                 <img src="./IMG/pngwing.com (24).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>S</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -223,7 +230,8 @@
                 <img src="./IMG/pngwing.com (25).png">
             </div>
         </div>
-        <div class="card" onclick='voltear(this)'>
+
+        <div class="card" data-tipo='consonante' onclick='voltear(this)'>
             <div class="delantera">
                 <h2>T</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -234,7 +242,7 @@
             </div>
         </div>
 
-        <div class="card" id="card" onclick='voltear(this)'>
+        <div class="card" data-tipo='vocal' id="card" onclick='voltear(this)'>
             <div class="delantera">
                 <h2>U</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -246,7 +254,7 @@
             </div>
         </div>
 
-        <div class="card" id="card" onclick='voltear(this)'>
+        <div class="card" data-tipo='consonante' id="card" onclick='voltear(this)'>
             <div class="delantera">
                 <h2>V</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -258,7 +266,7 @@
             </div>
         </div>
 
-        <div class="card" id="card" onclick='voltear(this)'>
+        <div class="card" data-tipo='consonante' id="card" onclick='voltear(this)'>
             <div class="delantera">
                 <h2>W</h2>
                 <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -269,7 +277,8 @@
                     src="./IMG/pngwing.com (6).png">
             </div>
         </div>
-            <div class="card" id="card" onclick='voltear(this)'>
+
+            <div class="card" data-tipo='consonante' id="card" onclick='voltear(this)'>
                 <div class="delantera">
                     <h2>X</h2>
                     <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -281,7 +290,7 @@
                 </div>
             </div>
 
-            <div class="card" id="card" onclick='voltear(this)'>
+            <div class="card" data-tipo='consonante' id="card" onclick='voltear(this)'>
                 <div class="delantera">
                     <h2>Y</h2>
                     <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -293,7 +302,7 @@
                 </div>
             </div>
 
-            <div class="card" id="card" onclick='voltear(this)'>
+            <div class="card" data-tipo='consonante' id="card" onclick='voltear(this)'>
                 <div class="delantera">
                     <h2>Z</h2>
                     <p>HAZ CLICK PARA DESCUBRIR</p>
@@ -308,9 +317,6 @@
     </div>
     </div>
 
-
-
-    <button id="botonTodas">Todas</button>
     <footer>
         <div id="footer">
             <h2>Autores</h2>

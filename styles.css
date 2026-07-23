@@ -93,5 +93,26 @@ ul{
     list-style: none;
 }
 
+/*Estilo botones*/
+
+#botones{
+    margin: 30px 250px;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.boton{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(89, 210, 172);
+    border-radius: 15px;
+    border: 2px solid rgb(37, 205, 231);
+    color: white;
+}
+
+
+
 
 
