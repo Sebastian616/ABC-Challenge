@@ -16,11 +16,8 @@ card.addEventListener("click", () => {
     card.classList.toggle("girar");
 })
 
-<<<<<<< HEAD
-=======
 console.log("hola mundo")
 
->>>>>>> origin/main
 
 
 const boton = document.getElementById("botonTodas");
