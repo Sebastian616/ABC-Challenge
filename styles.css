@@ -49,3 +49,38 @@ background: linear-gradient(60deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233
     background: rgb(8, 219, 152) ;
     transform: rotateY(180deg);
 }
+
+/*Estilo navbar*/
+.navbar{
+    width:90%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1px 60px;
+    background: linear-gradient(rgb(8, 219, 152), pink), rgb(37, 205, 231);
+}
+
+.menu{
+    display:flex;
+    justify-content:flex-end;
+    gap:40px;
+    list-style:none;
+}
+
+/*Estilo footer*/
+
+#footer {
+    background: linear-gradient(rgb(8, 219, 152), pink), rgb(37, 205, 231);
+    color: #052e09;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+
+ul{
+    list-style: none;
+}
+
+
+
