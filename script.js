@@ -27,6 +27,11 @@ cards.forEach(card => {
         card.classList.toggle("girar");
     });
 });
+const boton = document.getElementById("botonTodas");
+
+boton.addEventListener("click", function () {
+    alert("¡Hola! Presionaste el botón.");
+});
 
 function voltear(card) {
     console.log("Entró a voltear");
