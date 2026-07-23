@@ -8,9 +8,25 @@
 </head>
 <body>
     
-    <div>
-        <br> hola mundo </br>
-    </div>
+    <nav class="navbar">
+  <h2>ABCchallenge</h2>
+  <div class="contador">
+    Letras descubiertas: <span id="contador-letras">0</span>
+  </div>
+</nav>
+
+
+<div class='card' data-tipo='vocal' onclick='voltear(this)'>
+  <div class='card-frente'><h1>A</h1></div>
+  <div class='card-dorso'>
+    <img src='https://media.istockphoto.com/id/960293984/es/vector/personaje-de-dibujos-animados-aguacate-haciendo-ejercicios-con-el-aro-del-hula-plano.jpg?s=2048x2048&w=is&k=20&c=bhbmMdCtaeRJJfcNgVw2x0PkR1b9mWT4QVmMqycIxos=' alt='Aguacate animado'>
+    <h3>Aguacate</h3>
+  </div>
+</div>
+
+
+<div class="card" onclick="voltear(this)">Prueba</div>
+<div id="contador-letras">0</div>
 
     <script src="./script.js"></script>
 </body>
