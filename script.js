@@ -22,10 +22,18 @@ btnTodas.addEventListener('click', () => {
 //creamos la constante y entramos al div por id
 const cards = document.querySelectorAll(".card");
 // el foreach accede a todas las card y dice que cuando haya un click en card vaya a la lista y ejecute girar
+//creamos la constante y entramos al div por id
+const cards = document.querySelectorAll(".card");
+
 cards.forEach(card => {
     card.addEventListener("click", () => {
         card.classList.toggle("girar");
     });
+});
+const boton = document.getElementById("botonTodas");
+
+boton.addEventListener("click", function () {
+    alert("¡Hola! Presionaste el botón.");
 });
 
 function voltear(card) {
