@@ -1,3 +1,4 @@
+//Botones filtros
 const btnVocales = document.getElementById('btn-vocales');
 btnVocales.addEventListener('click', () => {
     cards.forEach(card => {
@@ -8,6 +9,14 @@ btnVocales.addEventListener('click', () => {
         }
     })
 })
+
+const btnTodas = document.getElementById('btn-todas');
+btnTodas.addEventListener('click', () => {
+    cards.forEach(card => {
+        card.style.display = 'block'       
+    })
+})
+
 //creamos la constante y entramos al div por id
 const cards = document.querySelectorAll(".card");
 // el foreach accede a todas las card y dice que cuando haya un click en card vaya a la lista y ejecute girar
