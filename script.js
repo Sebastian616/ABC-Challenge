@@ -1,3 +1,6 @@
+let letrasVistas = 0;
+
+//Botones filtros
 const btnVocales = document.getElementById('btn-vocales');
 btnVocales.addEventListener('click', () => {
     cards.forEach(card => {
@@ -8,27 +11,27 @@ btnVocales.addEventListener('click', () => {
         }
     })
 })
-//creamos la constante y entramos al div por id
-const card = document.getElementById("card");
 
-//accedemos a card y decimos que cuando se de clic entra a card, luego a la propiedad classlist y por ultimo activa toggle que provoca el giro al entrar al css
-card.addEventListener("click", () => {
-    card.classList.toggle("girar");
+const btnTodas = document.getElementById('btn-todas');
+btnTodas.addEventListener('click', () => {
+    cards.forEach(card => {
+        card.style.display = 'block'       
+    })
 })
 
-console.log("hola mundo")
-
-
-
-const boton = document.getElementById("botonTodas");
-
-boton.addEventListener("click", function () {
-    alert("¡Hola! Presionaste el botón.");
+//creamos la constante y entramos al div por id
+const cards = document.querySelectorAll(".card");
+// el foreach accede a todas las card y dice que cuando haya un click en card vaya a la lista y ejecute girar
+cards.forEach(card => {
+    card.addEventListener("click", () => {
+        card.classList.toggle("girar");
+    });
 });
-let letrasVistas = 0;
 
 function voltear(card) {
-  card.classList.toggle('volteada');
+    console.log("Entró a voltear");
+    console.log("Antes:", letrasVistas);
+    card.classList.toggle('volteada');
 
   // Solo sumamos si la card se est volteando por primera vez
   if (card.classList.contains('volteada') && !card.dataset.vista) {
